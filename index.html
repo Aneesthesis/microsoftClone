@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar p-4 flex justify-between items-center">
+    <div class="navbar flex justify-between items-center">
       <div class="flex justify-between items-center md:order-2">
         <div class="hamburger p-4 md:hidden">
           <div class="line w-6 h-0.5 bg-black my-1"></div>
@@ -19,9 +19,9 @@
         <div class="search md:hidden">Search</div>
       </div>
       <div class="logo md:order-1 flex">
-        <div>Microsoft</div>
+        <div class="p-4 w-44"><img src="RE1Mu3b.png" alt="" /></div>
         <div
-          class="features absolute md:static w-fit bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0"
+          class="features absolute md:static text-sm w-fit bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0 md:justify-center md:items-center"
         >
           <div class="fitem">Microsoft 365</div>
           <div class="fitem">Teams</div>
@@ -36,20 +36,54 @@
         <div class="cart">Cart Account</div>
       </div>
     </div>
-    <div class="slider flex flex-col-reverse md:flex-row md:flex-auto">
-      <div class="left mx-6 my-4 space-y-2 w-5/6 md:bg-[#f4f4f4] md:mx-auto">
-        <h2 class="ml-3 text-red-800 font-semibold">New</h2>
-        <h1 class="text-2xl font-semibold">Surface Pro 9</h1>
-        <p>
+    <div
+      class="slider flex flex-col-reverse md:flex-row md:flex-auto md:bg-[whitesmoke]"
+    >
+      <div
+        class="left mx-6 my-4 space-y-2 md:flex md:flex-col md:justify-center md:ml-24 md:mr-16 md:w-2/5"
+      >
+        <h2 class="ml-3 text-red-800 font-semibold md:bg-white md:w-fit">
+          New
+        </h2>
+        <h1 class="text-2xl font-semibold md:text-3xl">Surface Pro 9</h1>
+        <p class="pb-3">
           Keep spirits bright with a game-changing combo of laptop power and
           tablet flexibility—all in one ultra-portable device
         </p>
+        <button class="text-white bg-black font-semibold px-4 py-2 md:w-fit">
+          Learn more
+        </button>
       </div>
       <div class="right">
         <img
+          class="h-max"
           src="Highlight-Surface-Pro-9-All-Colors-FY23HOL_VP4-1399x600.jpeg"
           alt=""
         />
+      </div>
+    </div>
+    <hr class="h-5 shadow-inner" />
+
+    <div class="promo flex text-center underline md:justify-around md:px-36">
+      <div class="item flex flex-col items-center mx-4 px-10">
+        <img src="icon-LL-Windows-Logo-80x80.webp" alt="" />
+        <p class="font-bold text-">Choose your Microsoft 365</p>
+      </div>
+      <div class="item flex flex-col items-center mx-4">
+        <img
+          src="icon-LL-Tablet-Kickstand-Landscape-Mode-Fluent-80x80.webp"
+          alt=""
+        />
+        <p class="font-bold">Explore Surface devices</p>
+      </div>
+
+      <div class="item flex flex-col items-center mx-4">
+        <img src="icon-LL-Xbox-Logo-80x80.webp" alt="" />
+        <p class="font-bold">Buy Xbox games</p>
+      </div>
+      <div class="item flex flex-col items-center mx-4">
+        <img src="icon-LL-Windows-Logo-80x80.webp" alt="" />
+        <p class="font-bold">Get Windows 11</p>
       </div>
     </div>
   </body>
